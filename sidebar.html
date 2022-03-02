@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sidebar</title>
+    <style>
+        body{font-family: "Roboto",sans-serif;}/*Bodyde yazı tipini belirtiyoruz */
+        .sidenav{height: 100vh;width: 0px;position: fixed;top:0;left: 0; padding-top: 60px;background-color: #111;z-index: 999;transition: 0.5s;overflow-x: hidden;}
+        .sidenav a{display:block ; text-decoration: none;font-size: 20px;color: #aaa;padding: 8px 8px 8px 35px;}
+        .sidenav a:hover{color:yellow;}
+        .sidenav .closeBtn{position: absolute;top: 0;right: 20px;font-size: 36px;}
+        .open{font-size: 30px;cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="sidenav" id="sidebarNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+    </div>
+    <span class="open" onclick="openNav()">&#9776; open</span>
+    <main id="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam dicta quos beatae totam animi aut tenetur recusandae laborum illo amet, tempore itaque accusantium esse neque ex at sed earum!</p>
+    </main>
+    <script type="text/javascript">
+        function openNav(){
+            document.getElementById("sidebarNav").style.width="250px";
+            document.getElementById("main").style.marginLeft="250px";
+            document.body.style.backgroundColor="rgba(0,0,0, 0.4)";
+        }
+        function closeNav(){
+            document.getElementById("sidebarNav").style.width="0"
+            document.getElementById("main").style.marginLeft="0";
+            document.body.style.backgroundColor="#FFF";
+        }
+    </script>
+</body>
+</html>

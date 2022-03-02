@@ -1,0 +1,75 @@
+ /*GENERAL */
+ * { box-sizing: border-box;}
+ *::-webkit-scrollbar {width: 5px; background-color: #ededed;}  
+ *::-webkit-scrollbar-thumb {background-color: #000;} 
+ html{scroll-behavior: smooth;}
+ img { display: block; height: auto; max-width: 100%;}
+ header, section, footer, aside, nav, main, article, figure {display: block;}
+ button:hover{background-color: #54c3ee;}
+ label{font-size: 20px;}
+ input, textarea{width: 100%;padding: 12px 20px; margin: 8px 0;  box-sizing: border-box;border: none; border-radius: 5px;}
+/*NavBar*/
+.sidenav{height: 100vh;width: 0px;position: fixed;top:0;left: 0; padding-top: 60px;background-color: #111;z-index: 999;transition: 0.5s;overflow-x: hidden;}
+.sidenav a{display:block ; text-decoration: none;font-size: 20px;color: #aaa;padding: 8px 8px 8px 35px;}
+.sidenav a:hover{color:yellow;}
+.sidenav .closeBtn{position: absolute;top: 0;right: 20px;font-size: 36px;}
+.open{font-size: 30px;cursor: pointer;}
+
+/*body*/
+body{font-family: "Roboto",sans-serif;}/*Bodyde yazı tipini belirtiyoruz */
+.col-66{float: left; width: 66.66666%; padding: 20px;}
+.col-33{float: left; width: 33.33333%;padding: 20px;}
+.col-100{float: left; width: 100%;padding: 20px;}
+html{
+     background: url(hacker.jpg) no-repeat center center fixed;
+     color: greenyellow;
+ }
+h1{
+    text-align: center;
+    color: white;
+}
+h2{
+    padding: 8px 8px 8px 35px;
+    color: magenta;
+}
+p{
+    text-indent:50px;
+    font-size: 18px;
+}
+html{
+    background: url(img/background2.jpg);
+    background-size: cover;
+
+}
+div img{
+    position: relative;
+    top: 50px;
+    left: 5%;
+}
+a{
+    color: green;
+}
+pre{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+b{
+    color: red;
+}
+#subo{
+    background-color: white;
+}
+#subo:hover{
+    background-color: darkblue;
+}
+span{
+    color: white;
+}
+div button{
+  position: fixed;
+  bottom: 1000;
+  right: 0;
+  width: 90px;
+  height: 50px;
+}
